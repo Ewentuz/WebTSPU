@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>ДЗ-3</title>
+   </head>
+<body>
+<H1>Анкета посетителя ресторана</H1>
+    <form action="#" method="get">
+
+        <div>
+            <label for="name">ФИО</label> <br>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="phone">Номер телефона</label> <br>
+            <input type="text" id="phone" name="phone" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+        </div>
+
+        <div>
+            <label for="email">E-mail</label> <br>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="date">Дата посещения</label> <br>
+            <input type="date" id="date" name="date">
+        </div>
+        <div>
+            <label for="age">Возраст</label> <br>
+            <input type="number" id="age" name="age">
+        </div>
+
+        <label for="name">Любимая кухня</label> <br>
+        <select name="Дюбимая кухня">
+            <option value="Европейская">Европейская</option>
+            <option value="Азиатская">Азиатская</option>
+            <option value="Русская">Русская</option>
+            <option value="Восточная">Армянская</option>
+        
+        </select>
+
+        <div>Какие блюда</div>
+        <div>
+            <textarea name="message" rows="10" cols="30">
+            </textarea>
+        </div>
+        <div>
+            <label for="name">Критерии порядочного гражданина</label> <br>
+            <form action="/action_page.php">
+                <input type="checkbox" name="status" value="nr" checked>Недалеко от работы<br>
+                <input type="checkbox" name="status" value="sr">Реклама<br>
+                <input type="checkbox" name="status" value="ne">Посоветовали<br>
+            </form>
+        </div>
+        <div>Будете советовать?</div>
+        <div>
+            <form>
+                <div>
+                  <input type="radio" id="answer1"
+                   name="answery1" value="yes">
+                  <label for="answer1">Да</label><br>
+              
+                  <input type="radio" id="answer2"
+                   name="answern2" value="no">
+                  <label for="answer2">Нет</label>
+                </div>
+              </form>
+        </div>
+
+                <div>
+                    <br>
+                    <button>Отправить форму</button>
+                    <button>Сброс</button>
+                </div>
+
+</form>
+
+</body>
